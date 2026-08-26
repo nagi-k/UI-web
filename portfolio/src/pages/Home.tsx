@@ -78,22 +78,24 @@ export default function Home() {
               const inner = (
                 <div className="card group grid items-stretch gap-0 overflow-hidden transition-all duration-300 ease-out hover:-translate-y-1 hover:shadow-card-hover md:grid-cols-[1.2fr_1fr]">
                   {/* 图片侧：序号大的偶数项在桌面端镜像排布 */}
-                  <div className={`relative overflow-hidden ${i % 2 === 1 ? 'md:order-2' : ''}`}>
+                  <div
+                    className={`relative h-full min-h-[240px] overflow-hidden md:min-h-[320px] ${i % 2 === 1 ? 'md:order-2' : ''}`}
+                  >
                     <SmartImage
                       src={project.cover}
                       alt={project.title}
-                      wrapperClassName="aspect-[16/9] md:aspect-[21/9]"
+                      wrapperClassName="aspect-[16/9] md:h-full md:aspect-auto"
                       className="h-full w-full object-cover transition-transform duration-500 ease-out group-hover:scale-[1.03]"
                     />
-                    <span className="absolute left-5 top-5 rounded-full bg-white/90 px-3 py-1 text-xs font-medium text-ink backdrop-blur">
-                      {project.category}
-                    </span>
                   </div>
                   {/* 文字侧 */}
                   <div className="flex flex-col justify-center p-7 md:p-10">
-                    <span className="text-xs font-semibold tracking-[0.18em] text-muted">
-                      {String(i + 1).padStart(2, '0')} · {project.year}
-                    </span>
+                    <div className="flex flex-wrap items-center gap-3">
+                      <span className="text-xs font-semibold tracking-[0.18em] text-muted">
+                        {String(i + 1).padStart(2, '0')} · {project.year}
+                      </span>
+                      <span className="tag">{project.category}</span>
+                    </div>
                     <h3 className="mt-3 text-2xl font-bold tracking-tight transition-colors duration-200 group-hover:text-accent md:text-[28px]">
                       {project.title}
                     </h3>
