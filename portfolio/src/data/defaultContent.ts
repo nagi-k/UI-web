@@ -146,7 +146,7 @@ export const defaultContent: SiteContent = {
         "规范文档"
       ],
       "description": "Z 世代的梦境银行，语音存梦 + AI 分析 + 游戏化反馈，让记梦变成有趣的日常仪式。",
-      "cover": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Design%20system%20component%20library%20presentation%2C%20UI%20kit%20with%20buttons%20cards%20color%20palette%20typography%20scale%20organized%20in%20clean%20grid%2C%20blue%20and%20white%20design%20tokens%2C%20Figma%20style%20interface%20documentation%2C%20minimal%20professional%20layout%20on%20light%20gray%20background&image_size=landscape_4_3",
+      "cover": "https://pictures-for-portfolio-1465022720.cos.ap-shanghai.myqcloud.com/1.png",
       "link": "/cases/case-3/index.html",
       "featured": true
     },
