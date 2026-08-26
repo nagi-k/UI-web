@@ -19,7 +19,7 @@ button{font-family:var(--font);cursor:pointer;border:none;background:none;color:
 .nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:center;gap:26px;
   padding:12px 32px;background:rgba(250,249,246,.85);backdrop-filter:blur(14px);border-bottom:1px solid transparent;transition:border-color .3s,box-shadow .3s}
 .nav.scrolled{border-color:var(--line);box-shadow:0 4px 20px rgba(41,37,36,.05)}
-.nav-logo{display:flex;align-items:center;gap:9px;font-weight:700;font-size:15px}
+.nav-logo{display:flex;align-items:center;gap:9px;font-weight:700;font-size:15px;margin-left:110px}
 .nav-links{display:flex;gap:4px;margin:0 auto}
 .nav-links a{font-size:13px;color:var(--text-2);padding:7px 11px;border-radius:999px;transition:all .2s}
 .nav-links a:hover{color:var(--brand-deep);background:var(--brand-light)}
