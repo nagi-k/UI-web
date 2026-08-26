@@ -1071,7 +1071,6 @@ function switchTab(name){
 }
 /* deep link: ?tab=home|route|map|foot|profile */
 const _deepTab=new URLSearchParams(location.search).get('tab');
-if(_deepTab&&TABS.includes(_deepTab)&&_deepTab!=='home')switchTab(_deepTab);
 document.getElementById('tabbar').addEventListener('click',e=>{
   const b=e.target.closest('.tab');if(b)switchTab(b.dataset.tab);
 });
@@ -1233,8 +1232,8 @@ pfScreen.addEventListener('scroll',()=>{
   if(img&&y<220)img.style.transform=`translateY(${y*.45}px)`;
 },{passive:true});
 
-/* init */
-switchTab('home');
+/* init: respect deep link, default to home */
+switchTab(_deepTab && TABS.includes(_deepTab) ? _deepTab : 'home');
 </script>
 </body>
 </html>
