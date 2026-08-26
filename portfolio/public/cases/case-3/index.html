@@ -128,27 +128,37 @@ body{ margin:0; background:var(--bg); color:var(--ink);
 </nav>
 
 <!-- ============ Hero ============ -->
-<header id="top" class="relative pt-40 pb-24 px-6">
+<header id="top" class="relative pt-40 pb-24 px-6 overflow-hidden">
   <div class="max-w-6xl mx-auto">
-    <div class="reveal"><span class="chip">🌙 独立产品概念设计 · 2026</span></div>
-    <h1 class="reveal font-display font-black leading-[1.08] mt-6" style="font-size:clamp(42px,8vw,96px)">
-      梦屿<br><span class="grad-text">Dream Bank</span>
-    </h1>
-    <p class="reveal mt-7 text-lg md:text-xl max-w-xl leading-relaxed" style="color:var(--ink-sub); transition-delay:.1s">
-      一款面向 Z 世代的梦境记录与分析 App ——<br class="hidden md:block">
-      把每天早上 90% 会被遗忘的梦，存进一座会分析、会写诗、会连接的「梦境银行」。
-    </p>
-    <p class="reveal font-poem mt-5 text-base" style="color:rgba(236,72,153,.9); transition-delay:.18s">你的梦，值得被记住。 · 每晚都是一场私人电影。</p>
-    <div class="reveal flex flex-wrap gap-3 mt-10" style="transition-delay:.25s">
-      <a href="#proto" class="px-7 py-3.5 rounded-full text-sm font-medium text-white no-underline hoverable"
-         style="background:linear-gradient(90deg,#8B5CF6,#EC4899); box-shadow:0 10px 34px rgba(139,92,246,.4)">▶ 在线体验可交互原型</a>
-      <a href="#process" class="px-7 py-3.5 rounded-full text-sm no-underline glass hoverable" style="color:var(--ink)">看设计过程</a>
-    </div>
-    <div class="reveal grid grid-cols-2 md:grid-cols-4 gap-3 mt-16 max-w-2xl" style="transition-delay:.32s">
-      <div class="glass p-4"><div class="text-[11px]" style="color:var(--ink-sub)">我的角色</div><div class="text-sm font-bold mt-1">独立设计师</div></div>
-      <div class="glass p-4"><div class="text-[11px]" style="color:var(--ink-sub)">负责范围</div><div class="text-sm font-bold mt-1">用研 / 交互 / 视觉 / 原型</div></div>
-      <div class="glass p-4"><div class="text-[11px]" style="color:var(--ink-sub)">平台</div><div class="text-sm font-bold mt-1">iOS / Android</div></div>
-      <div class="glass p-4"><div class="text-[11px]" style="color:var(--ink-sub)">周期</div><div class="text-sm font-bold mt-1">2026.06 — 08</div></div>
+    <div class="grid md:grid-cols-2 gap-12 lg:gap-16 items-center">
+      <div>
+        <div class="reveal"><span class="chip">🌙 独立产品概念设计 · 2026</span></div>
+        <h1 class="reveal font-display font-black leading-[1.08] mt-6" style="font-size:clamp(42px,8vw,84px)">
+          梦屿<br><span class="grad-text">Dream Bank</span>
+        </h1>
+        <p class="reveal mt-7 text-lg md:text-xl max-w-xl leading-relaxed" style="color:var(--ink-sub); transition-delay:.1s">
+          一款面向 Z 世代的梦境记录与分析 App ——<br class="hidden md:block">
+          把每天早上 90% 会被遗忘的梦，存进一座会分析、会写诗、会连接的「梦境银行」。
+        </p>
+        <p class="reveal font-poem mt-5 text-base" style="color:rgba(236,72,153,.9); transition-delay:.18s">你的梦，值得被记住。 · 每晚都是一场私人电影。</p>
+        <div class="reveal flex flex-wrap gap-3 mt-10" style="transition-delay:.25s">
+          <a href="#proto" class="px-7 py-3.5 rounded-full text-sm font-medium text-white no-underline hoverable"
+             style="background:linear-gradient(90deg,#8B5CF6,#EC4899); box-shadow:0 10px 34px rgba(139,92,246,.4)">▶ 在线体验可交互原型</a>
+          <a href="#process" class="px-7 py-3.5 rounded-full text-sm no-underline glass hoverable" style="color:var(--ink)">看设计过程</a>
+        </div>
+        <div class="reveal grid grid-cols-2 md:grid-cols-4 gap-3 mt-16 max-w-2xl" style="transition-delay:.32s">
+          <div class="glass p-4"><div class="text-[11px]" style="color:var(--ink-sub)">我的角色</div><div class="text-sm font-bold mt-1">独立设计师</div></div>
+          <div class="glass p-4"><div class="text-[11px]" style="color:var(--ink-sub)">负责范围</div><div class="text-sm font-bold mt-1">用研 / 交互 / 视觉 / 原型</div></div>
+          <div class="glass p-4"><div class="text-[11px]" style="color:var(--ink-sub)">平台</div><div class="text-sm font-bold mt-1">iOS / Android</div></div>
+          <div class="glass p-4"><div class="text-[11px]" style="color:var(--ink-sub)">周期</div><div class="text-sm font-bold mt-1">2026.06 — 08</div></div>
+        </div>
+      </div>
+      <div class="hidden md:flex justify-center reveal" style="transition-delay:.18s">
+        <div class="phone-frame" style="transform:rotate(2deg)">
+          <div class="phone-notch"></div>
+          <iframe src="./prototype.html#record" loading="eager" title="捕梦网记录"></iframe>
+        </div>
+      </div>
     </div>
   </div>
 </header>
