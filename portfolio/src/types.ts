@@ -23,6 +23,8 @@ export interface HeroSlide {
   image: string;
   title: string;
   subtitle: string;
+  /** 轮播图点击跳转链接（如 /cases/case-1/index.html） */
+  link: string;
 }
 
 export interface TimelineItem {

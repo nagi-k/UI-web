@@ -41,26 +41,44 @@ export default function Carousel({ slides, interval = 4500 }: CarouselProps) {
         className="flex transition-transform duration-500 ease-[cubic-bezier(0.22,1,0.36,1)]"
         style={{ transform: `translateX(-${index * 100}%)` }}
       >
-        {slides.map((slide) => (
-          <div key={slide.id} className="relative aspect-[16/9] w-full shrink-0 md:aspect-[21/9]">
-            <img
-              src={slide.image}
-              alt={slide.title}
-              loading="lazy"
-              decoding="async"
-              className="h-full w-full object-cover"
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/55 via-black/10 to-transparent" />
-            <div className="absolute bottom-0 left-0 p-6 md:p-10">
-              <p className="text-xs font-semibold uppercase tracking-[0.18em] text-white/70">
-                {slide.subtitle}
-              </p>
-              <h3 className="mt-2 text-2xl font-bold tracking-tight text-white md:text-3xl">
-                {slide.title}
-              </h3>
+        {slides.map((slide) => {
+          const slideInner = (
+            <>
+              <img
+                src={slide.image}
+                alt={slide.title}
+                loading="lazy"
+                decoding="async"
+                className="h-full w-full object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/55 via-black/10 to-transparent" />
+              <div className="absolute bottom-0 left-0 p-6 md:p-10">
+                <p className="text-xs font-semibold uppercase tracking-[0.18em] text-white/70">
+                  {slide.subtitle}
+                </p>
+                <h3 className="mt-2 text-2xl font-bold tracking-tight text-white md:text-3xl">
+                  {slide.title}
+                </h3>
+              </div>
+            </>
+          );
+          return (
+            <div key={slide.id} className="relative aspect-[16/9] w-full shrink-0 md:aspect-[21/9]">
+              {slide.link ? (
+                <a
+                  href={slide.link}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="block h-full w-full cursor-pointer"
+                >
+                  {slideInner}
+                </a>
+              ) : (
+                slideInner
+              )}
             </div>
-          </div>
-        ))}
+          );
+        })}
       </div>
 
       {/* 左右切换 */}

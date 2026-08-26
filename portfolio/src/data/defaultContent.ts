@@ -26,6 +26,7 @@ export const defaultContent: SiteContent = {
         ),
         title: '轻氧金融 APP',
         subtitle: '移动端 · 金融产品体验重构',
+        link: '/cases/case-1/index.html',
       },
       {
         id: 's2',
@@ -34,6 +35,7 @@ export const defaultContent: SiteContent = {
         ),
         title: '山月茶事小程序',
         subtitle: '小程序 · 新中式茶饮电商',
+        link: '/cases/case-2/index.html',
       },
       {
         id: 's3',
@@ -42,6 +44,7 @@ export const defaultContent: SiteContent = {
         ),
         title: 'Nebula 设计系统',
         subtitle: '设计系统 · 组件库与规范',
+        link: '/cases/case-3/index.html',
       },
     ],
   },
@@ -130,7 +133,7 @@ export const defaultContent: SiteContent = {
       cover: img(
         'Clean minimal mobile banking app UI design mockup on soft light gray background, floating phone screens showing dashboard with cards and charts, modern fintech interface, white and blue color scheme, professional product shot, soft shadows, high quality',
       ),
-      link: '',
+      link: '/cases/case-1/index.html',
       featured: true,
     },
     {
@@ -145,7 +148,7 @@ export const defaultContent: SiteContent = {
       cover: img(
         'Minimal tea culture mini program interface design, elegant mobile UI screens with soft beige and green tones, e-commerce product pages, clean typography, floating iPhone mockups on light background, professional UI portfolio presentation',
       ),
-      link: '',
+      link: '/cases/case-2/index.html',
       featured: true,
     },
     {
@@ -160,7 +163,7 @@ export const defaultContent: SiteContent = {
       cover: img(
         'Design system component library presentation, UI kit with buttons cards color palette typography scale organized in clean grid, blue and white design tokens, Figma style interface documentation, minimal professional layout on light gray background',
       ),
-      link: '',
+      link: '/cases/case-3/index.html',
       featured: true,
     },
     {
@@ -175,7 +178,7 @@ export const defaultContent: SiteContent = {
       cover: img(
         'Mobile app micro interaction motion design showcase, smooth animation frames of UI transitions and loading states, playful toggle switches and success checkmark animations, blue accent on white interface, clean minimal presentation',
       ),
-      link: '',
+      link: '/cases/case-4/index.html',
       featured: true,
     },
   ],

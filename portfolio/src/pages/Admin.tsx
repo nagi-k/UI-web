@@ -172,6 +172,13 @@ export default function Admin() {
                       <Field label="图片 URL">
                         <TextInput value={slide.image} onChange={(v) => patch((d) => ((d.hero.slides[i].image = v), d))} />
                       </Field>
+                      <Field label="跳转链接">
+                        <TextInput
+                          value={slide.link}
+                          placeholder="/cases/case-1/index.html"
+                          onChange={(v) => patch((d) => ((d.hero.slides[i].link = v), d))}
+                        />
+                      </Field>
                       <div className="grid gap-4 sm:grid-cols-2">
                         <Field label="标题">
                           <TextInput value={slide.title} onChange={(v) => patch((d) => ((d.hero.slides[i].title = v), d))} />
@@ -187,7 +194,7 @@ export default function Admin() {
                   className="btn-secondary h-10 px-5 text-sm"
                   onClick={() =>
                     patch((d) => (
-                      (d.hero.slides = [...d.hero.slides, { id: uid(), image: '', title: '新轮播', subtitle: '' }]),
+                      (d.hero.slides = [...d.hero.slides, { id: uid(), image: '', title: '新轮播', subtitle: '', link: '' }]),
                       d
                     ))
                   }
