@@ -41,13 +41,14 @@ export default function Carousel({ slides, interval = 4500 }: CarouselProps) {
         className="flex transition-transform duration-500 ease-[cubic-bezier(0.22,1,0.36,1)]"
         style={{ transform: `translateX(-${index * 100}%)` }}
       >
-        {slides.map((slide) => {
+        {slides.map((slide, i) => {
+          const isFirst = i === 0;
           const slideInner = (
             <>
               <img
                 src={slide.image}
                 alt={slide.title}
-                loading="lazy"
+                loading={isFirst ? 'eager' : 'lazy'}
                 decoding="async"
                 className="h-full w-full object-cover"
               />
