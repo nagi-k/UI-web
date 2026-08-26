@@ -51,14 +51,18 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 精选轮播 */}
-      <section className="pb-4">
-        <div className="container-site">
-          <Reveal>
-            <Carousel slides={content.hero.slides} />
-          </Reveal>
-        </div>
-      </section>
+      {false && (
+        <>
+          {/* 精选轮播（已隐藏，需要时打开外层 {false && ...} 即可） */}
+          <section className="pb-4">
+            <div className="container-site">
+              <Reveal>
+                <Carousel slides={content.hero.slides} />
+              </Reveal>
+            </div>
+          </section>
+        </>
+      )}
 
       {/* 四个案例入口（从上到下依次排列，带微交互） */}
       <section className="section-gap">
