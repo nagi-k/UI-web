@@ -10,7 +10,7 @@ export default function ProjectCard({ project }: { project: Project }) {
         <SmartImage
           src={project.cover}
           alt={project.title}
-          wrapperClassName="aspect-[4/3]"
+          wrapperClassName="aspect-[16/9] md:aspect-[21/9]"
           className="h-full w-full object-cover transition-transform duration-500 ease-out group-hover:scale-[1.04]"
         />
         <span className="absolute left-4 top-4 rounded-full bg-white/90 px-3 py-1 text-xs font-medium text-ink backdrop-blur">

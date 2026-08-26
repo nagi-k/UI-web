@@ -82,8 +82,8 @@ export default function Home() {
                     <SmartImage
                       src={project.cover}
                       alt={project.title}
-                      wrapperClassName="h-full"
-                      className="aspect-[16/10] h-full w-full object-cover transition-transform duration-500 ease-out group-hover:scale-[1.03] md:aspect-auto"
+                      wrapperClassName="aspect-[16/9] md:aspect-[21/9]"
+                      className="h-full w-full object-cover transition-transform duration-500 ease-out group-hover:scale-[1.03]"
                     />
                     <span className="absolute left-5 top-5 rounded-full bg-white/90 px-3 py-1 text-xs font-medium text-ink backdrop-blur">
                       {project.category}
