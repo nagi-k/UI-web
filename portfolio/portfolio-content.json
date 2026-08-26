@@ -1,6 +1,4 @@
-import type { SiteContent } from '../types';
-
-export const defaultContent: SiteContent = {
+{
   "site": {
     "name": "Portfolio",
     "logoText": "wangying",
@@ -167,4 +165,4 @@ export const defaultContent: SiteContent = {
       "featured": true
     }
   ]
-};
+}
