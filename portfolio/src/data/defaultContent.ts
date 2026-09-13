@@ -18,21 +18,21 @@ export const defaultContent: SiteContent = {
         "image": "https://pictures-for-portfolio-1465022720.cos.ap-shanghai.myqcloud.com/4.png",
         "title": "Mood Garden ",
         "subtitle": "情绪花园",
-        "link": "/cases/case-1/index.html"
+        "link": "/ui/cases/case-1/index.html"
       },
       {
         "id": "s2",
         "image": "https://pictures-for-portfolio-1465022720.cos.ap-shanghai.myqcloud.com/3.png",
         "title": "WanderMap ",
         "subtitle": "把城市走成一本私藏地图",
-        "link": "/cases/case-2/index.html"
+        "link": "/ui/cases/case-2/index.html"
       },
       {
         "id": "s3",
         "image": "https://pictures-for-portfolio-1465022720.cos.ap-shanghai.myqcloud.com/1.png",
         "title": "Dream Bank",
         "subtitle": "梦屿 ",
-        "link": "/cases/case-3/index.html"
+        "link": "/ui/cases/case-3/index.html"
       }
     ]
   },
@@ -114,7 +114,7 @@ export const defaultContent: SiteContent = {
       ],
       "description": "一款以植物隐喻情绪状态的心理健康 App，帮助用户记录、梳理与疗愈日常情绪。",
       "cover": "https://pictures-for-portfolio-1465022720.cos.ap-shanghai.myqcloud.com/4.png",
-      "link": "/cases/case-1/index.html",
+      "link": "/ui/cases/case-1/index.html",
       "featured": true
     },
     {
@@ -130,7 +130,7 @@ export const defaultContent: SiteContent = {
       ],
       "description": "面向城市探索者的慢游 App，用路线串联小店、展览与街角风景，把城市走成一本私藏地图。",
       "cover": "https://pictures-for-portfolio-1465022720.cos.ap-shanghai.myqcloud.com/3.png",
-      "link": "/cases/case-2/index.html",
+      "link": "/ui/cases/case-2/index.html",
       "featured": true
     },
     {
@@ -147,7 +147,7 @@ export const defaultContent: SiteContent = {
       ],
       "description": "Z 世代的梦境银行，语音存梦 + AI 分析 + 游戏化反馈，让记梦变成有趣的日常仪式。",
       "cover": "https://pictures-for-portfolio-1465022720.cos.ap-shanghai.myqcloud.com/1.png",
-      "link": "/cases/case-3/index.html",
+      "link": "/ui/cases/case-3/index.html",
       "featured": true
     },
     {
@@ -163,7 +163,7 @@ export const defaultContent: SiteContent = {
       ],
       "description": "高考志愿智能决策平台，用数据与算法帮助考生科学、高效地填报志愿。",
       "cover": "https://pictures-for-portfolio-1465022720.cos.ap-shanghai.myqcloud.com/2.png",
-      "link": "/cases/case-4/index.html",
+      "link": "/ui/cases/case-4/index.html",
       "featured": true
     }
   ]
